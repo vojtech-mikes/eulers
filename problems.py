@@ -36,6 +36,16 @@ def problem3():
 
     return p
 
+def problem6():
+    n = list(range(1,101))
+
+    sosquare = sum(map(lambda x : x ** 2, n))
+
+    sosum = sum(n) ** 2
+
+    return sosum - sosquare
+
+
 def problem7():
     c = 0
     p = 0
@@ -50,7 +60,7 @@ def problem7():
     return p
 
 def main():
-    print(problem7())
+    print(problem6())
 
 
 if __name__ == "__main__":
