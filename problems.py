@@ -5,8 +5,23 @@ def problem1():
     return solution
 
 
+def problem2():
+    x = 1
+    y = 2
+    z = 0
+    total = 2
+
+    while z < 4_000_000:
+        z = x + y
+        if z % 2 == 0:
+            total += z
+        x = y
+        y = z
+
+    return total
+
 def main():
-    print(problem1())
+    print(problem2())
 
 
 if __name__ == "__main__":
