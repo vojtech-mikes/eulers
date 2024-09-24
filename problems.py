@@ -36,8 +36,21 @@ def problem3():
 
     return p
 
+def problem7():
+    c = 0
+    p = 0
+    n = 0
+    while c < 1_0001:
+        if utils.is_prime(n):
+            p = n
+            c += 1
+
+        n += 1
+
+    return p
+
 def main():
-    print(problem3())
+    print(problem7())
 
 
 if __name__ == "__main__":
